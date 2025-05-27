@@ -17,7 +17,7 @@ export default function Login({ onLogin }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ padding: "40px", display: "flex", flexDirection: "column", gap: "10px" }}>
+    <form onSubmit={handleSubmit} style={{ padding: 40, display: "flex", flexDirection: "column", gap: 10 }}>
       <h2>Giriş Yap</h2>
       <input type="email" placeholder="E-posta" value={email} onChange={(e) => setEmail(e.target.value)} required />
       <input type="password" placeholder="Şifre" value={password} onChange={(e) => setPassword(e.target.value)} required />

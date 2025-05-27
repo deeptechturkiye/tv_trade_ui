@@ -16,7 +16,7 @@ const TradingViewChart = () => {
         theme: "dark",
         container_id: containerRef.current.id,
         allow_symbol_change: true,
-        autosize: true,
+        autosize: true
       });
     };
     document.body.appendChild(script);
@@ -33,9 +33,7 @@ export default function App() {
     return () => unsubscribe();
   }, []);
 
-  if (!user) {
-    return <Login onLogin={() => {}} />;
-  }
+  if (!user) return <Login onLogin={() => {}} />;
 
   return (
     <div className="p-4">
